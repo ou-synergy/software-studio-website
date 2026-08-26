@@ -1,6 +1,8 @@
 import { client } from "@/sanity/client";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 const ADMIN_TEAM_MEMBERS_QUERY = `*[_type == "adminTeamMember"] | order(order asc, _createdAt asc) {
   _id,
   name,
