@@ -2,7 +2,7 @@ import { client } from "@/sanity/client";
 import { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-const ANNOUNCEMENTS_QUERY = `*[_type == "announcement"] | order(order asc, _createdAt desc) {
+const ANNOUNCEMENTS_QUERY = `*[_type == "announcement"] | order(coalesce(order, 0) asc, _createdAt desc) {
   _id,
   title,
   "pdfUrl": pdf.asset->url,
@@ -24,7 +24,7 @@ export async function GET(request: NextRequest) {
 
         const query =
           limit !== null && Number.isFinite(limit) && limit > 0
-            ? `*[_type == "announcement"] | order(order asc, _createdAt desc)[0...$limit] {
+            ? `*[_type == "announcement"] | order(coalesce(order, 0) asc, _createdAt desc)[0...$limit] {
                 _id,
                 title,
                 "pdfUrl": pdf.asset->url,
