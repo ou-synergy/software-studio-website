@@ -1,6 +1,8 @@
 import { client } from "@/sanity/client";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 const CONTACT_INFO_QUERY = `*[_type == "contactInfo"] | order(_createdAt asc) {
   _id,
   prefix,
