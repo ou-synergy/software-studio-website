@@ -26,10 +26,7 @@ function StudioUpdates() {
       <div className={s.updateList}>
         {items.map((item) => (
           <article key={item._id}>
-            <Link
-              href={`/blog#announcement-${item._id}`}
-              className={s.updateThumb}
-            >
+            <Link href={`/updates/${item._id}`} className={s.updateThumb}>
               {item.imagePreview && (
                 <Image
                   src={media(item.imagePreview, 400)!}
@@ -42,14 +39,9 @@ function StudioUpdates() {
             </Link>
             <div>
               <h3>
-                <Link href={`/blog#announcement-${item._id}`}>
-                  {item.title}
-                </Link>
+                <Link href={`/updates/${item._id}`}>{item.title}</Link>
               </h3>
-              <Link
-                className={s.textLink}
-                href={`/blog#announcement-${item._id}`}
-              >
+              <Link className={s.textLink} href={`/updates/${item._id}`}>
                 Read announcement <Arrow />
               </Link>
               {item.pdfUrl && (
@@ -154,9 +146,9 @@ export default function StudioHome() {
                 ),
               )}
             </ol>
-            <a className={s.textLink} href="#experience">
+            <Link className={s.textLink} href="/program">
               See the program <Arrow />
-            </a>
+            </Link>
           </div>
         </section>
         <section className={`${s.container} ${s.participate}`} id="experience">

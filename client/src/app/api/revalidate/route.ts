@@ -32,6 +32,7 @@ export async function POST(request: NextRequest) {
             // In production, you might want to fetch the document from Sanity to get its type
             revalidatePath("/");
             revalidatePath("/blog");
+            revalidatePath("/about-us");
             revalidatePath("/api/projects");
             revalidatePath("/api/faqs");
             revalidatePath("/api/admin-team-members");
@@ -64,6 +65,7 @@ export async function POST(request: NextRequest) {
 
             case "adminTeamMember":
                 revalidatePath("/api/admin-team-members");
+                revalidatePath("/about-us");
                 revalidatePath("/");
                 break;
 
@@ -74,6 +76,7 @@ export async function POST(request: NextRequest) {
 
             case "announcement":
                 revalidatePath("/api/announcements");
+                revalidatePath("/blog");
                 revalidatePath("/");
                 break;
 
@@ -92,6 +95,7 @@ export async function POST(request: NextRequest) {
                 // If type is unknown, revalidate everything
                 revalidatePath("/");
                 revalidatePath("/blog");
+                revalidatePath("/about-us");
                 revalidatePath("/api/projects");
                 revalidatePath("/api/faqs");
                 revalidatePath("/api/admin-team-members");

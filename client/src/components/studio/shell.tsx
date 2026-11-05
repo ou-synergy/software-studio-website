@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import {
   Bars3Icon,
@@ -10,10 +11,21 @@ import {
 import { JOIN, INVEST, DISCORD } from "./data";
 import { useCollection } from "./use-collection";
 import s from "./studio.module.css";
+const navigation = [
+  ["/", "Home"],
+  ["/about-us", "About"],
+  ["/startups", "Startups"],
+  ["/blog", "Updates"],
+];
 export function Arrow() {
   return <ArrowRightIcon width={20} height={20} aria-hidden="true" />;
 }
 export function Header({ home = false }: { home?: boolean }) {
+  const pathname = usePathname();
+  const current = (href: string) =>
+    pathname === href ||
+    (href === "/startups" && pathname?.startsWith("/startups/")) ||
+    (href === "/blog" && pathname?.startsWith("/updates/"));
   const [open, setOpen] = useState(false),
     [scrolled, setScrolled] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
@@ -41,10 +53,15 @@ export function Header({ home = false }: { home?: boolean }) {
           />
         </Link>
         <nav className={s.desktopNav} aria-label="Main navigation">
-          <Link href="/">Home</Link>
-          <Link href="/about-us">About</Link>
-          <Link href="/startups">Startups</Link>
-          <Link href="/blog">Updates</Link>
+          {navigation.map(([href, label]) => (
+            <Link
+              key={href}
+              href={href}
+              aria-current={current(href) ? "page" : undefined}
+            >
+              {label}
+            </Link>
+          ))}
         </nav>
         <div className={s.headerActions}>
           <a href={INVEST} target="_blank" rel="noopener noreferrer">
@@ -66,6 +83,9 @@ export function Header({ home = false }: { home?: boolean }) {
           aria-expanded={open}
           aria-controls="studio-mobile-nav"
           onClick={() => setOpen(!open)}
+          onKeyDown={(event) => {
+            if (event.key === "Escape") setOpen(false);
+          }}
         >
           {open ? <XMarkIcon width={28} /> : <Bars3Icon width={28} />}
         </button>
@@ -83,10 +103,15 @@ export function Header({ home = false }: { home?: boolean }) {
           }}
           onClick={() => setOpen(false)}
         >
-          <Link href="/">Home</Link>
-          <Link href="/about-us">About</Link>
-          <Link href="/startups">Startups</Link>
-          <Link href="/blog">Updates</Link>
+          {navigation.map(([href, label]) => (
+            <Link
+              key={href}
+              href={href}
+              aria-current={current(href) ? "page" : undefined}
+            >
+              {label}
+            </Link>
+          ))}
           <a href={JOIN} target="_blank" rel="noopener noreferrer">
             Sign Up
           </a>
@@ -147,7 +172,7 @@ export function Footer() {
           </Link>
           <nav aria-label="Footer navigation">
             <Link href="/startups">Startups</Link>
-            <a href="/#program">Program</a>
+            <Link href="/program">Program</Link>
             <Link href="/about-us">About</Link>
             <Link href="/blog">Updates</Link>
             <a href={INVEST} target="_blank" rel="noopener noreferrer">
