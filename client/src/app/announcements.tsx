@@ -113,7 +113,7 @@ export const Announcements = React.forwardRef<HTMLDivElement, AnnouncementsProps
                             : null;
 
                         return (
-                            <Card key={announcement._id} className="shadow-lg hover:shadow-xl transition-shadow">
+                            <Card id={`announcement-${announcement._id}`} key={announcement._id} className="scroll-mt-28 shadow-lg hover:shadow-xl transition-shadow">
                                 <div className="flex flex-col md:flex-row">
                                     {imageUrl && (
                                         <CardHeader

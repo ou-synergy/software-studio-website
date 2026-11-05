@@ -8,13 +8,6 @@ const nextConfig = {
       },
     ],
   },
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://softwarestudio.cs.ou.edu/",
-      "permanent": true
-    },
-  ],
 };
 
 module.exports = nextConfig;
