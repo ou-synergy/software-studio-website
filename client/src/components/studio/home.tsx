@@ -131,24 +131,27 @@ export default function StudioHome() {
         </section>
         <section className={s.program} id="program">
           <div className={s.container}>
-            <h2>From idea to launch.</h2>
-            <p className={s.lead}>
-              Find your team. Build, test, and grow together.
-            </p>
+            <div className={s.programIntro}>
+              <div>
+                <h2>From idea to launch.</h2>
+                <p className={s.lead}>
+                  Find your team. Build, test, and grow together.
+                </p>
+              </div>
+              <Link className={`${s.button} ${s.programLink}`} href="/program">
+                Explore the program <Arrow />
+              </Link>
+            </div>
             <ol className={s.journey}>
               {["Pitch", "Team up", "Validate", "Build", "Launch", "Grow"].map(
                 (step, i) => (
                   <li key={step}>
-                    <span>{String(i + 1).padStart(2, "0")}</span>
+                    <span aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
                     {step}
-                    {i < 5 && <Arrow />}
                   </li>
                 ),
               )}
             </ol>
-            <Link className={s.textLink} href="/program">
-              See the program <Arrow />
-            </Link>
           </div>
         </section>
         <section className={`${s.container} ${s.participate}`} id="experience">
