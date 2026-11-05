@@ -7,12 +7,11 @@ Use the supplied context brief as background, not page copy.
 
 ## Core copy
 
-Headline: **Build something real.**
+Hero direction updated after the user's screenshot review: preserve the current photo, dark overlay, large white logo on the left and copy/actions on the right. Preserve the headline **Be a Part of Entrepreneurship and Innovation!** Shorten the supporting copy rather than replacing the opening identity.
 
-Supporting line: Turn an idea into a software startup with a team of OU students.
+Supporting line: A two-semester program where OU students turn ideas into real software startups.
 
-Primary action: Join Software Studio.
-Secondary action: Explore the startups.
+Hero actions: Sign Up and Invest, matching the current site. Startup exploration follows immediately below the hero. Later joining sections may use Join Software Studio and Join Discord.
 
 Essential reassurance: All majors welcome. No idea, team, or coding experience required.
 
@@ -36,6 +35,8 @@ Announcements should be a small timely update area, not long posters and full ar
 ## Visual direction
 
 Modern incubator, not a generic club template. Restrained crimson, charcoal and white; confident typography, generous space, actual student photos and product screenshots. Use short headings and paragraphs. Avoid decorative dashboard interfaces, invented metrics, heavy card grids, stock imagery and excessive gradients. Keep navigation simple and mobile access obvious.
+
+All currently used assets must remain in use in the appropriate pages and archives. See `redesign-asset-inventory.md` for the current published media references and locked hero assets. Homepage curation must not drop assets from startup profiles, About, announcements or blog articles.
 
 ## Accuracy and content
 
