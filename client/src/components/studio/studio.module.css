@@ -47,7 +47,7 @@
   line-height: 1.08;
 }
 .studio h2 {
-  font-size: clamp(32px, 4.1vw, 60px);
+  font-size: clamp(28px, 3vw, 40px);
 }
 .studio section[id] {
   scroll-margin-top: 110px;
@@ -89,18 +89,19 @@
   display: flex;
   align-items: center;
   gap: 32px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
 }
 .headerActions {
   gap: 28px;
-  font-size: 15px;
+  font-size: 14px;
 }
 .headerActions .button {
   background: #fff;
   color: #171717;
-  min-height: 46px;
-  padding: 12px 28px;
+  min-height: 44px;
+  padding: 11px 24px;
+  font-size: 14px;
 }
 .lightHeader .headerActions .button {
   background: #171717;
@@ -129,7 +130,7 @@
 }
 .hero {
   position: relative;
-  min-height: 780px;
+  min-height: 720px;
   height: 85svh;
   max-height: 1150px;
   display: flex;
@@ -161,20 +162,23 @@
   text-align: right;
 }
 .heroPrelude {
-  font-size: clamp(24px, 2.7vw, 38px);
+  font-size: clamp(20px, 1.8vw, 26px);
   font-weight: 700;
-  margin-bottom: 20px !important;
+  margin-bottom: 16px !important;
   line-height: 1.2;
 }
 .heroCopy h1 {
-  font-size: clamp(38px, 4.3vw, 65px);
+  font-size: clamp(34px, 3.2vw, 48px);
   line-height: 1.12;
   letter-spacing: -0.025em;
 }
 .heroDescription {
-  font-size: clamp(18px, 1.8vw, 26px);
+  font-size: clamp(17px, 1.4vw, 20px);
   line-height: 1.55;
-  margin-top: 24px !important;
+  margin-top: 20px !important;
+  max-width: 520px;
+  margin-inline-start: auto !important;
+  text-wrap: balance;
 }
 .actions {
   display: flex;
@@ -184,22 +188,24 @@
 }
 .heroCopy .actions {
   justify-content: flex-end;
-  margin-top: 54px;
+  margin-top: 32px;
+  gap: 12px;
 }
 .heroCopy .button {
-  min-width: 200px;
-  min-height: 74px;
-  font-size: 24px;
+  min-width: 132px;
+  min-height: 48px;
+  padding: 13px 26px;
+  font-size: 16px;
 }
 .button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 17px 34px;
-  min-height: 56px;
+  padding: 13px 26px;
+  min-height: 48px;
   border: 1px solid transparent;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.3;
   background: #171717;
@@ -236,7 +242,7 @@
   margin-bottom: 36px;
 }
 .lead {
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: clamp(17px, 1.6vw, 21px);
   color: #606066;
   line-height: 1.5;
   margin-top: 14px !important;
@@ -246,7 +252,7 @@
   align-items: center;
   gap: 12px;
   color: var(--crimson);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   text-underline-offset: 5px;
 }
@@ -274,7 +280,7 @@
   border-bottom: 3px solid transparent;
   background: transparent;
   padding: 16px 10px;
-  font-size: 18px;
+  font-size: 16px;
   color: #5e5e63;
   cursor: pointer;
 }
@@ -330,7 +336,7 @@
   margin-top: 16px;
 }
 .projectHeading h3 {
-  font-size: 32px;
+  font-size: 26px;
   margin-bottom: 8px;
 }
 .projectHeading span {
@@ -338,7 +344,7 @@
   color: #676767;
 }
 .project p {
-  font-size: 18px;
+  font-size: 17px;
   color: #616167;
   margin-top: 8px;
   min-height: 56px;
@@ -389,7 +395,7 @@
   display: flex;
   gap: 12px;
   align-items: center;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
 }
 .journey li span {
@@ -404,13 +410,13 @@
   padding-bottom: 40px;
 }
 .roles {
-  font-size: clamp(23px, 2.6vw, 36px);
+  font-size: clamp(21px, 2vw, 28px);
   font-weight: 650;
   margin-top: 32px !important;
   letter-spacing: -0.025em;
 }
 .commitment {
-  font-size: 22px;
+  font-size: 18px;
   color: #606066;
   margin: 30px 0 !important;
 }
@@ -436,7 +442,7 @@
   padding-block: 60px 90px;
 }
 .updates h2 {
-  font-size: 38px;
+  font-size: 32px;
 }
 .updateList {
   display: grid;
@@ -456,7 +462,7 @@
   background: #f4f4f4;
 }
 .updateList h3 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 16px;
 }
 .pdfLink {
@@ -472,7 +478,7 @@
   padding-block: 70px;
 }
 .join h2 {
-  font-size: clamp(30px, 3.4vw, 48px);
+  font-size: clamp(28px, 2.8vw, 38px);
   margin-bottom: 34px;
 }
 .footer {
@@ -525,7 +531,7 @@
   padding-top: 160px;
 }
 .innerPage h1 {
-  font-size: clamp(42px, 5vw, 72px);
+  font-size: clamp(34px, 3.7vw, 48px);
 }
 .innerPage .filters {
   margin-top: 44px;
@@ -546,7 +552,7 @@
   gap: 60px;
 }
 .detailGrid h2 {
-  font-size: 28px;
+  font-size: 25px;
   margin-bottom: 22px;
 }
 .detailImage {
@@ -557,7 +563,7 @@
 .description {
   white-space: pre-wrap;
   color: #525259;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.8;
 }
 .description a {
@@ -570,7 +576,7 @@
   padding-top: 30px;
 }
 .team p {
-  font-size: 19px;
+  font-size: 17px;
   margin-top: 16px;
 }
 .teamImage {
@@ -586,7 +592,7 @@
     gap: 80px;
   }
   .heroCopy h1 {
-    font-size: 70px;
+    font-size: 52px;
   }
 }
 @media (max-width: 1100px) {
@@ -609,7 +615,7 @@
     gap: 34px;
   }
   .hero {
-    min-height: 760px;
+    min-height: 700px;
   }
   .journey {
     gap: 12px;
@@ -671,13 +677,13 @@
   }
   .hero {
     height: auto;
-    min-height: 780px;
+    min-height: 700px;
     max-height: none;
-    padding: 140px 0 70px;
+    padding: 124px 0 54px;
   }
   .heroGrid {
     grid-template-columns: 1fr;
-    gap: 42px;
+    gap: 32px;
     padding-top: 0;
   }
   .heroLogo {
@@ -688,14 +694,14 @@
     text-align: center;
   }
   .heroCopy h1 {
-    font-size: clamp(35px, 6vw, 48px);
+    font-size: clamp(31px, 4.8vw, 40px);
   }
   .heroPrelude {
-    font-size: 24px;
+    font-size: 21px;
     margin-bottom: 14px !important;
   }
   .heroDescription {
-    font-size: 20px;
+    font-size: 18px;
     max-width: 500px;
     margin-inline: auto !important;
   }
@@ -713,7 +719,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .projectHeading h3 {
-    font-size: 28px;
+    font-size: 25px;
   }
   .desktopBrowse {
     display: none;
@@ -732,7 +738,7 @@
     margin-block: 36px;
   }
   .journey li {
-    font-size: 20px;
+    font-size: 18px;
     gap: 15px;
   }
   .journey li span {
@@ -772,28 +778,31 @@
 }
 @media (max-width: 550px) {
   .hero {
-    min-height: 850px;
-    padding-top: 140px;
+    min-height: 700px;
+    padding-top: 124px;
   }
   .heroGrid {
-    gap: 38px;
+    gap: 32px;
   }
   .heroCopy h1 {
-    font-size: 37px;
+    font-size: clamp(26px, 7.9vw, 31px);
     line-height: 1.14;
   }
   .heroPrelude {
-    font-size: 23px;
+    font-size: 21px;
   }
   .heroDescription {
     font-size: 18px;
   }
   .heroCopy .actions {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 12px;
   }
   .heroCopy .button {
-    width: 100%;
+    flex: 1;
+    min-width: 0;
+    max-width: 180px;
   }
   .container {
     width: calc(100% - 40px);
@@ -802,10 +811,10 @@
     padding-block: 55px;
   }
   .studio h2 {
-    font-size: 34px;
+    font-size: 28px;
   }
   .lead {
-    font-size: 18px;
+    font-size: 17px;
   }
   .projectGrid {
     grid-template-columns: 1fr;
@@ -835,13 +844,13 @@
   }
   .project p {
     min-height: 0;
-    font-size: 18px;
+    font-size: 17px;
   }
   .productImage {
     aspect-ratio: 1.15/1;
   }
   .projectHeading h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .project .textLink {
     margin-top: 18px;
@@ -850,20 +859,20 @@
     padding-block: 52px;
   }
   .program .lead {
-    font-size: 19px;
+    font-size: 17px;
   }
   .participate {
     padding-top: 55px;
   }
   .roles {
-    font-size: 25px;
+    font-size: 21px;
     margin-top: 24px !important;
   }
   .commitment {
-    font-size: 19px;
+    font-size: 17px;
   }
   .textLink {
-    font-size: 17px;
+    font-size: 16px;
   }
   .updates {
     padding-block: 35px 55px;
@@ -895,7 +904,7 @@
     gap: 14px;
   }
   .join h2 {
-    font-size: 34px;
+    font-size: 28px;
   }
   .footer {
     padding-top: 40px;
@@ -919,10 +928,10 @@
     margin-block: 28px 35px;
   }
   .innerPage h1 {
-    font-size: 45px;
+    font-size: 34px;
   }
   .description {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -951,7 +960,7 @@
 }
 .aboutIntro > div > p:not(.lead) {
   color: #606066;
-  font-size: 19px;
+  font-size: 17px;
   margin: 22px 0 30px;
   max-width: 560px;
 }
@@ -970,7 +979,7 @@
   margin-top: 56px;
 }
 .peopleGroup > h3 {
-  font-size: 26px;
+  font-size: 23px;
   border-top: 1px solid #ddd;
   padding-top: 24px;
   margin-bottom: 30px;
@@ -994,7 +1003,7 @@
   margin: 0;
   font-weight: 700;
   letter-spacing: -0.025em;
-  font-size: 26px;
+  font-size: 23px;
   line-height: 1.2;
 }
 .person .personRole {
@@ -1047,7 +1056,7 @@
   margin-bottom: 80px;
 }
 .archiveSection > h2 {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 28px;
 }
 .archiveList {
@@ -1071,7 +1080,7 @@
 }
 .archiveRow h3,
 .storyRow h3 {
-  font-size: clamp(24px, 2.6vw, 36px);
+  font-size: clamp(22px, 2vw, 28px);
   max-width: 850px;
 }
 .archiveExcerpt {
@@ -1080,7 +1089,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   color: #606066;
-  font-size: 18px;
+  font-size: 17px;
   max-width: 760px;
   margin: 20px 0 24px !important;
 }
@@ -1135,7 +1144,7 @@
   margin: 44px auto;
 }
 .richContent {
-  font-size: 19px;
+  font-size: 17px;
   color: #525259;
   line-height: 1.85;
   overflow-wrap: anywhere;
@@ -1145,12 +1154,12 @@
   white-space: pre-line;
 }
 .richContent h2 {
-  font-size: 32px;
+  font-size: 28px;
   margin: 40px 0 22px;
   color: var(--ink);
 }
 .richContent h3 {
-  font-size: 26px;
+  font-size: 23px;
   margin: 30px 0 18px;
   color: var(--ink);
 }
@@ -1231,13 +1240,13 @@
   margin-bottom: 28px;
 }
 .programStages h2 {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 18px;
 }
 .programStages p,
 .programCommitment p {
   color: #606066;
-  font-size: 19px;
+  font-size: 17px;
 }
 .programCommitment {
   border-block: 1px solid #ddd;
@@ -1247,7 +1256,7 @@
   padding-block: 60px;
 }
 .programCommitment h2 {
-  font-size: 42px;
+  font-size: 32px;
   max-width: 500px;
 }
 .programCommitment p {
@@ -1257,7 +1266,7 @@
   padding-top: 70px;
 }
 .programFaq h2 {
-  font-size: 42px;
+  font-size: 32px;
 }
 .programFaq .faq {
   max-width: 100%;
@@ -1327,7 +1336,7 @@
   }
   .programCommitment h2,
   .programFaq h2 {
-    font-size: 34px;
+    font-size: 28px;
   }
   .announcementPoster {
     max-width: 500px;
@@ -1383,19 +1392,19 @@
     margin-block: 26px 30px;
   }
   .articleHeader h1 {
-    font-size: 38px;
+    font-size: 32px;
   }
   .richContent {
-    font-size: 18px;
+    font-size: 17px;
   }
   .articleBody {
     margin-block: 30px;
   }
   .aboutIntro > div > p:not(.lead) {
-    font-size: 18px;
+    font-size: 17px;
   }
   .peopleGroup > h3 {
-    font-size: 24px;
+    font-size: 23px;
   }
 }
 .bioPreview {
